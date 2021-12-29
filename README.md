@@ -18,12 +18,24 @@ To write a program to find the GCD of two numbers using function.
 /*
 Program to find the gcd of two number using function.
 Developed by: 
-RegisterNumber:  
+RegisterNumber: 
+def gcd_recursive(x,y):
+    rem = x%y
+    if (rem==0):
+        return y
+    else:
+        return gcd_recursive(y,rem)
+    
+def gcd():
+    n,m=int(input()),int(input())
+    print("GCD of two numbers is:", gcd_recursive(n,m)) 
 */
 ```
 
+
 ## Output:
 ![gcd of two number](gcd.png)
+![gcd of two number](1.png)
 
 
 ## Result:
